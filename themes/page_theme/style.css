@@ -262,3 +262,7 @@ display: block;
 .site-navigation{
     padding: 0;
 }
+
+.dropdown-menu > li > a:hover ul, .dropdown-menu > li > a:focus ul{
+    display: block;
+}
