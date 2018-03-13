@@ -277,5 +277,23 @@ display: block;
     padding-left: 15px;
     text-align: right;
     color: #555555;
+    float: right;
+    position: relative;
+    top: -18px;
+    right: -13px;
 }
-
+/*
+#main-menu li ul.dropdown-menu li ul.dropdown-menu a::after {
+    font-family: sans-serif;
+    content: "";
+    font-size: 12px;
+    display: none;
+    padding-left: 0;
+    text-align: right;
+    color:transparent;
+    float: none;
+    position: inherit;
+    top:0;
+    right: 0;
+}
+*/
