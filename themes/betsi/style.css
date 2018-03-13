@@ -297,3 +297,60 @@ display: block;
     right: 0;
 }
 */
+
+
+/*SIDE CONTACT FORM*/
+#side-form-container {
+
+}
+.textwidget.custom-html-widget {
+    background: #BF9E59;
+    color: #fff;
+    width: 260px;
+    position: fixed;
+    left: 0;
+    padding: 10px;
+}
+.widget_text.close-x {
+    position: fixed;
+    left: 243px;
+    z-index: 9999999;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 11px;
+    background: rgba(255, 255,255,0.5);
+    cursor: pointer;
+    top: 267px;
+    display: none;
+}
+.side-title-form {
+    overflow: hidden;
+    position: fixed;
+    left: -54px;
+    top: 200px;
+    z-index: 9999999;
+    margin: 0;
+    background: #BF9E59;
+    color: #fff;
+    padding: 10px 19px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);width: 161px;
+}
+.side-title-form:hover{
+   color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.textwidget.custom-html-widget {
+    display: none;
+}

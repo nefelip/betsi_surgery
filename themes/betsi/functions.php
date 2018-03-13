@@ -81,6 +81,14 @@ function _tk_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+    register_sidebar( array(
+		'name'          => __( 'Side Contact Form', '_tk' ),
+		'id'            => 'side-contact',
+		'before_widget' => '<div id="side-form-container" class="side-wid %2$s"><span class="close-x">X</span>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a class="side-title-form">',
+		'after_title'   => '</a>',
+	) );
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
 
