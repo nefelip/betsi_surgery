@@ -12,14 +12,13 @@ jQuery( document ).ready( function( $ ) {
     });
 
     $('.stellarnav').stellarNav({
-        theme     : 'plain',
+        theme     : 'dark',
         breakpoint: 898,
-        phoneBtn: false,
         locationBtn: false,
         sticky     : false,
         position: 'static',
         showArrows: true,
-        closeBtn     : false,
+        closeBtn     : true,
         scrollbarFix: false
     });
 } );
