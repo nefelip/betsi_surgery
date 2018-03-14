@@ -13,7 +13,7 @@ jQuery( document ).ready( function( $ ) {
 
     $('.stellarnav').stellarNav({
         theme     : 'plain',
-        breakpoint: 768,
+        breakpoint: 898,
         phoneBtn: false,
         locationBtn: false,
         sticky     : false,
