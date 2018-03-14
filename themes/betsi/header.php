@@ -28,8 +28,8 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 <nav class="site-navigation container-fluid">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-    <div class="row">
-        <div class="site-navigation-inner col-sm-12">
+<!--    <div class="row">-->
+<!--        <div class="site-navigation-inner col-sm-12">-->
         <?php
             wp_nav_menu(
                 array(
@@ -41,8 +41,8 @@
                 )
             );
             ?>
-        </div>
-	</div><!-- .container -->
+<!--        </div>-->
+<!--	</div> .container -->
 </nav><!-- .site-navigation -->
 
 </header><!-- #masthead -->
