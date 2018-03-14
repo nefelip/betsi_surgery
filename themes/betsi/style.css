@@ -274,6 +274,7 @@ nav.site-navigation.container-fluid {
 .stellarnav ul a {
     color: #fff;
     padding: 10px;
+    font-size: 12px;
 }
 
 a.menu-toggle.full {
