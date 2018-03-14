@@ -24,5 +24,7 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
+<?php if ( ! dynamic_sidebar( 'side-contact' ) ) : ?>
+	<?php dynamic_sidebar( 'side-contact' ); ?>
+<?php endif; ?>
 <?php get_footer(); ?>
