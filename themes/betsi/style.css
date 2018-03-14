@@ -263,17 +263,17 @@ nav.site-navigation.container-fluid {
 }
 
 .stellarnav ul, .stellarnav ul ul {
-    background: #000;
+/*    background: #000;*/
 }
 
 .stellarnav>ul>li>a {
     padding: 12px 6px;
-    color: #fff;
+/*    color: #fff;*/
 }
 
 .stellarnav ul a {
     color: #fff;
-    padding: 10px;
+    padding: 12px 6px;
     font-size: 12px;
 }
 
