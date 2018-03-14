@@ -109,6 +109,9 @@ function _tk_scripts() {
 	// load Font Awesome css
 	wp_enqueue_style( '_tk-font-awesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', false, '4.1.0' );
 
+    // load animate css
+	wp_enqueue_style( 'animatecss', get_template_directory_uri() . '/includes/css/animate.min.css' );
+
 	// load _tk styles
 	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
 
