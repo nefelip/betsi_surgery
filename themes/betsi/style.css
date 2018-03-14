@@ -306,7 +306,8 @@ display: block;
 .textwidget.custom-html-widget {
     background: #BF9E59;
     color: #fff;
-    width: 260px;
+    max-width: 350px;
+    width: 30%;
     position: fixed;
     left: 0;
     padding: 10px;
@@ -372,10 +373,12 @@ font-weight: 600;
     top: 0;
     height: 100%;
     z-index: 99;
+    max-width: 440px;
 }
 }
 @media (max-width:800px){
     .textwidget.custom-html-widget {
+        max-width: 440px;
        width: 100%;
     }
 }
