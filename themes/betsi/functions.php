@@ -187,6 +187,7 @@ function fontawesome_icon_dashboard() {
        #adminmenu .menu-icon-surgery div.wp-menu-image:before {
             font-family: Fontawesome !important;
             content: '\\f0f0';
+            color: #bf9e59;
         }
      </style>";
  }
