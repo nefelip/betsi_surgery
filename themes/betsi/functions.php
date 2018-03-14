@@ -137,6 +137,61 @@ function _tk_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 
+
+function ntz_post_type_custom(){
+
+    // Actions post type
+    register_post_type('surgery', array(
+        "labels" => array(
+            "name"          => _x( 'Surgery posts', '_tk' ),
+            "singular_name" => _x( 'Surgery post', '_tk' ),
+            'menu_name'     => __( 'All surgery posts', '_tk' ),
+            "view_item"     => __( 'View surgery post', '_tk' ),
+            "edit_item"     => __( 'Edit surgery post', '_tk' ),
+            "add_new"       => __( 'Add a new surgery post', '_tk' ),
+        ),
+        "public" => true,
+        "menu_icon" => 'dashicons-hammer',
+        "supports" => array(
+            "title",
+            "thumbnail",
+            "editor",
+            "custom-fields"
+    ),
+        'taxonomies' => array('post_tag')
+    ));
+
+    register_taxonomy('method_categories', array('methods'), array(
+        "hierarchical" => true,
+        "labels" => array(
+            "name"          => __( 'Restoration method categories' ),
+            "singular_name" => __( 'Restoration method category' ),
+            "view_item"     => __( 'View method category' ),
+            "edit_item"     => __( 'Edit method category' ),
+            "add_new_item"  => __( 'Add a new method category' ),
+        ),
+        "query_var" => true,
+        "rewrite" => array( 'slug' => 'method_categories')
+    ));
+}
+add_action('init', 'ntz_post_type_custom');
+
+function fontawesome_dashboard() {
+   wp_enqueue_style('fontawesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', '', '4.5.0', 'all');
+}
+
+add_action('admin_init', 'fontawesome_dashboard');
+
+function fontawesome_icon_dashboard() {
+   echo "<style type='text/css' media='screen'>
+       #adminmenu .menu-icon-surgery div.wp-menu-image:before {
+            font-family: Fontawesome !important;
+            content: '\\f0f0';
+        }
+     </style>";
+ }
+add_action('admin_head', 'fontawesome_icon_dashboard');
+
 /**
  * Implement the Custom Header feature.
  */
