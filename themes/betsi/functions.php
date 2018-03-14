@@ -138,7 +138,7 @@ function _tk_scripts() {
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 
 
-function ntz_post_type_custom(){
+function betsi_post_type_custom(){
 
     // Actions post type
     register_post_type('surgery', array(
@@ -161,20 +161,20 @@ function ntz_post_type_custom(){
         'taxonomies' => array('post_tag')
     ));
 
-    register_taxonomy('method_categories', array('methods'), array(
+    register_taxonomy('surgery_categories', array('surgery'), array(
         "hierarchical" => true,
         "labels" => array(
-            "name"          => __( 'Restoration method categories' ),
-            "singular_name" => __( 'Restoration method category' ),
-            "view_item"     => __( 'View method category' ),
-            "edit_item"     => __( 'Edit method category' ),
-            "add_new_item"  => __( 'Add a new method category' ),
+            "name"          => __( 'Surgery post categories' ),
+            "singular_name" => __( 'Surgery post category' ),
+            "view_item"     => __( 'View surgery post category' ),
+            "edit_item"     => __( 'Edit surgery post category' ),
+            "add_new_item"  => __( 'Add a new surgery post category' ),
         ),
         "query_var" => true,
-        "rewrite" => array( 'slug' => 'method_categories')
+        "rewrite" => array( 'slug' => 'surgery_categories')
     ));
 }
-add_action('init', 'ntz_post_type_custom');
+add_action('init', 'betsi_post_type_custom');
 
 function fontawesome_dashboard() {
    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', '', '4.5.0', 'all');
