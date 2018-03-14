@@ -322,7 +322,7 @@ font-weight: 600;
 .side-title-form {
     overflow: hidden;
     position: fixed;
-    left: -54px;
+    left: 0;
     top: 200px;
     z-index: 9999999;
     margin: 0;
@@ -337,7 +337,7 @@ font-weight: 600;
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg);width: 161px;
+    transform: rotate(90deg);
 }
 .side-title-form:hover{
    color: #fff;

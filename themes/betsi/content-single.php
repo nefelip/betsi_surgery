@@ -8,9 +8,9 @@
 	<header>
 		<h1 class="page-title"><?php the_title(); ?></h1>
 
-		<div class="entry-meta">
-			<?php _tk_posted_on(); ?>
-		</div><!-- .entry-meta -->
+<!--		<div class="entry-meta">-->
+			<?php //_tk_posted_on(); ?>
+<!--		</div> .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -18,16 +18,19 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<?php the_content(); ?>
-		<?php
+<!--
+		< ?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_tk' ),
 				'after'  => '</div>',
 			) );
 		?>
+-->
 	</div><!-- .entry-content -->
 
+<!--
 	<footer class="entry-meta">
-		<?php
+		< ?php
 			/* translators: used between list items, there is a space after the comma */
 			$category_list = get_the_category_list( __( ', ', '_tk' ) );
 
@@ -52,15 +55,16 @@
 
 			} // end check for categories on this blog
 
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink(),
-				the_title_attribute( 'echo=0' )
-			);
+//			printf(
+//				$meta_text,
+//				$category_list,
+//				$tag_list,
+//				get_permalink(),
+//				the_title_attribute( 'echo=0' )
+//			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+		<?php //edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
+	</footer>
+-->
 </article><!-- #post-## -->

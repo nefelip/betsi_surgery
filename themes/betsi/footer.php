@@ -11,7 +11,9 @@
 		</div><!-- close .row -->
 	</div><!-- close .container -->
 </div><!-- close .main-content -->
-
+<?php if ( ! dynamic_sidebar( 'side-contact' ) ) : ?>
+	<?php dynamic_sidebar( 'side-contact' ); ?>
+<?php endif; ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
