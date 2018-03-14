@@ -103,6 +103,9 @@ function _tk_scripts() {
 	// load bootstrap css
 	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.min.css' );
 
+    // Import the stellarnav css
+	wp_enqueue_style( 'stellarnavcss', get_template_directory_uri() . '/includes/css/stellarnav.min.css' );
+
 	// load Font Awesome css
 	wp_enqueue_style( '_tk-font-awesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', false, '4.1.0' );
 
@@ -117,6 +120,9 @@ function _tk_scripts() {
 
 	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+    // load stellarnav js
+	wp_enqueue_script( 'stellarnavjs', get_template_directory_uri() . '/includes/js/stellarnav.min.js', array(), '14032018', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -124,6 +130,9 @@ function _tk_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+
+    // load script js
+	wp_enqueue_script('_tk-scriptjs', get_template_directory_uri() . '/includes/js/scripts.js', array('jquery'), '07032018', true  );
 
 }
 add_action( 'wp_enqueue_scripts', '_tk_scripts' );

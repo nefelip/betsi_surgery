@@ -10,4 +10,16 @@ jQuery( document ).ready( function( $ ) {
         $(".widget_text.close-x").hide();
         $('.side-title-form' ).show();
     });
+
+    $('.stellarnav').stellarNav({
+        theme     : 'plain',
+        breakpoint: 768,
+        phoneBtn: false,
+        locationBtn: false,
+        sticky     : false,
+        position: 'static',
+        showArrows: true,
+        closeBtn     : false,
+        scrollbarFix: false
+    });
 } );
