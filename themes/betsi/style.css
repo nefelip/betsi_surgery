@@ -382,6 +382,7 @@ a.menu-toggle.full {
     width: auto;
     padding: 10px;
     visibility: hidden;
+    z-index: 9999;
 }
 
 .close-x {
