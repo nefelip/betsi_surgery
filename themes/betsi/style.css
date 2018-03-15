@@ -42,175 +42,245 @@ Credits:
 /* My Minimal WordPress Styling comes here */
 
 /* This is a small security for too long strings titles */
+
 body {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* Alignment */
+
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
+
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
+
 .aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
+    clear: both;
+    display: block;
+    margin: 0 auto;
 }
 
 
 /* Images and wp-captions should always fit and be responsive */
+
 img {
-	display: inline-block;
-	height: auto;
-	max-width: 100%;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
 }
+
 img[class*="wp-image-"] {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 .wp-caption {
-	border: 1px solid #ccc;
-	margin-bottom: 10px;
-	max-width: 100%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	padding: 0 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
 }
+
 .wp-caption.aligncenter {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .wp-caption img[class*="wp-image-"] {
-	display: block;
+    display: block;
 }
+
 .wp-caption .wp-caption-text {
-	text-align: center;
-	margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* WP Gallery */
+
 .gallery {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
+
 .gallery a img {
-	border: none;
-	height: auto;
-	max-width: 90%;
+    border: none;
+    height: auto;
+    max-width: 90%;
 }
+
 .gallery dd {
-	margin: 0;
+    margin: 0;
 }
+
 .gallery-caption {
-	display: block;
+    display: block;
 }
 
 /* Make sure embeds and iframes fit their containers */
+
 embed,
 iframe,
 object {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 
 /* Text meant only for screen readers */
+
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
 }
+
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */
 }
 
 
 /* Content */
+
 .main-content-inner {
-	padding-bottom: 1.5em;
+    padding-bottom: 1.5em;
 }
+
 .hentry {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
+
 .sticky {
-	display: block;
+    display: block;
 }
+
 .bypostauthor {
-	display: block;
+    display: block;
 }
 
 
 /* Clearing */
+
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /* Navigation */
 
-.dropdown-submenu{position:relative;}
-.dropdown-submenu>.dropdown-menu{top:0;left:100%;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
-.dropdown-submenu:active>.dropdown-menu, .dropdown-submenu:hover>.dropdown-menu {
-display: block;
+.dropdown-submenu {
+    position: relative;
 }
-.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
-.dropdown-submenu:active>a:after{border-left-color:#ffffff;}
-.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:active > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:active > a:after {
+    border-left-color: #ffffff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
 
 
 /* Here some needed widget styles
  * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
-.widget { margin-bottom: 2em; }
-.widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
+
+.widget {
+    margin-bottom: 2em;
+}
+
+.widget_nav_menu ul.sub-menu li,
+.widget_pages ul.children li {
+    padding-left: 15px;
+}
 
 /* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line.
  * Note: you can change the whole appearance of the search_form() function in our searchform.php */
-.widget_search .search-form input[type="submit"] { display: none; }
+
+.widget_search .search-form input[type="submit"] {
+    display: none;
+}
 
 /* Make sure select elements fit in widgets */
+
 .widget select {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
- .comment .children { margin-left: 1.5em; }
+
+.comment .children {
+    margin-left: 1.5em;
+}
 
 /**
 * Some WP Theme Repository requirements
 */
 
-.sticky {
-}
+.sticky {}
 
-.gallery-caption {
+.gallery-caption {}
 
-}
-
-.bypostauthor {
-
-}
+.bypostauthor {}
 
 .entry-meta {
-	clear: both;
+    clear: both;
 }
 
 /*
@@ -262,13 +332,14 @@ nav.site-navigation.container-fluid {
     background: #000;
 }
 
-.stellarnav ul, .stellarnav ul ul {
-/*    background: #000;*/
+.stellarnav ul,
+.stellarnav ul ul {
+    /*    background: #000;*/
 }
 
-.stellarnav>ul>li>a {
+.stellarnav > ul > li > a {
     padding: 12px 6px;
-/*    color: #fff;*/
+    /*    color: #fff;*/
 }
 
 .stellarnav ul a {
@@ -281,7 +352,8 @@ a.menu-toggle.full {
     color: #fff;
 }
 
-.stellarnav a:hover, .stellarnav a:focus {
+.stellarnav a:hover,
+.stellarnav a:focus {
     color: #BF9E59;
 }
 
@@ -291,34 +363,42 @@ a.menu-toggle.full {
 
 
 /*SIDE CONTACT FORM*/
-#side-form-container {
 
+#side-form-container {}
+
+.side-widget-title {
+    display: none;
 }
-.textwidget.custom-html-widget {
+
+#patient-form-wrapper {
+    position: fixed;
+    margin: auto;
+    top: 100px;
+    bottom: 20px;
+    left: 0;
     background: #BF9E59;
     color: #fff;
     max-width: 350px;
     width: 30%;
-    position: fixed;
-    left: 0;
     padding: 10px;
-    top: 180px;
-    display: none;
+/*    display: none;*/
+    visibility: hidden;
 }
+
 .close-x {
-float: right;
-width: 15px;
-height: 15px;
-text-align: center;
-font-size: 11px;
-background: rgba(255, 255,255,0.5);
-cursor: pointer;
-display: none;
-margin-top: -5px;
-margin-right: -5px;
-color: black;
-font-weight: 600;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
 }
+
 .side-title-form {
     overflow: hidden;
     position: fixed;
@@ -336,47 +416,49 @@ font-weight: 600;
     display: block;
     font-size: 22px;
     -webkit-transform-origin: 0 50%;
-       -moz-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-         -o-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
     -webkit-transform: rotate(-90deg) translate(-50%, 50%);
-       -moz-transform: rotate(-90deg) translate(-50%, 50%);
-        -ms-transform: rotate(-90deg) translate(-50%, 50%);
-         -o-transform: rotate(-90deg) translate(-50%, 50%);
-            transform: rotate(-90deg) translate(-50%, 50%);
+    -moz-transform: rotate(-90deg) translate(-50%, 50%);
+    -ms-transform: rotate(-90deg) translate(-50%, 50%);
+    -o-transform: rotate(-90deg) translate(-50%, 50%);
+    transform: rotate(-90deg) translate(-50%, 50%);
 }
-.side-title-form:hover{
-   color: #fff;
+
+.slideInLeft { visibility: visible !important; }
+
+.side-title-form:hover {
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 
-
-
-@media (max-width:1260px){
+@media (max-width:1260px) {
     .side-title-form {
-    left: 0;
-    top: unset;
-    -webkit-transform:unset;
-    -moz-transform:unset;
-    -o-transform: unset;
-    -ms-transform:unset;
-    transform: unset;
-    bottom: 0;
+        left: 0;
+        top: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -o-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        bottom: 0;
+    }
+    .textwidget.custom-html-widget {
+        width: 50%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9999;
+        max-width: 440px;
+    }
 }
-.textwidget.custom-html-widget {
-    width: 50%;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: 9999;
-    max-width: 440px;
-}
-}
-@media (max-width:800px){
+
+@media (max-width:800px) {
     .textwidget.custom-html-widget {
         max-width: 440px;
-       width: 100%;
+        width: 100%;
     }
 }

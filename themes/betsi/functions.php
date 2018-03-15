@@ -82,12 +82,12 @@ function _tk_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
     register_sidebar( array(
-		'name'          => __( 'Side Contact Form', '_tk' ),
-		'id'            => 'side-contact',
-		'before_widget' => '<div id="side-form-container" class="side-wid %2$s">',
+		'name'          => __( 'Side Patient Form', '_tk' ),
+		'id'            => 'side-form',
+		'before_widget' => '<div id="patient-form-container" class="side-wid %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a class="side-title-form">',
-		'after_title'   => '</a>',
+		'before_title'  => '<h4 class="side-widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
@@ -133,6 +133,8 @@ function _tk_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+
+    wp_enqueue_script( 'jquery-effects-slide' );
 
     // load script js
 	wp_enqueue_script('_tk-scriptjs', get_template_directory_uri() . '/includes/js/scripts.js', array('jquery'), '07032018', true  );
