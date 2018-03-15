@@ -379,9 +379,8 @@ a.menu-toggle.full {
     background: #BF9E59;
     color: #fff;
     max-width: 350px;
-    width: 30%;
+    width: auto;
     padding: 10px;
-/*    display: none;*/
     visibility: hidden;
 }
 
