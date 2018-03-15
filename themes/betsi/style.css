@@ -457,7 +457,7 @@ a.menu-toggle.full {
 
 @media (max-width:800px) {
     .textwidget.custom-html-widget {
-        max-width: 440px;
+/*        max-width: 440px;*/
         width: 100%;
     }
 }
