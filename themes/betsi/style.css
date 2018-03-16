@@ -378,7 +378,6 @@ a.menu-toggle.full {
     left: 0;
     background: #BF9E59;
     color: #fff;
-    max-width: 350px;
     width: auto;
     padding: 10px;
     visibility: hidden;
@@ -446,6 +445,7 @@ a.menu-toggle.full {
         transform: unset;
         bottom: 0;
     }
+/*
     .textwidget.custom-html-widget {
         width: 50%;
         left: 0;
@@ -453,12 +453,15 @@ a.menu-toggle.full {
         height: 100%;
         z-index: 9999;
         max-width: 440px;
+*/
     }
 }
 
 @media (max-width:800px) {
+/*
     .textwidget.custom-html-widget {
-/*        max-width: 440px;*/
+        max-width: 440px;
         width: 100%;
     }
+*/
 }
