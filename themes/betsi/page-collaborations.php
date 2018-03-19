@@ -18,16 +18,24 @@ get_header(); ?>
 
     ?>
     <h3>Ελβετία</h3>
+    <div class="row">
     <?php
     $query = new WP_Query( $args);
     while ( $query->have_posts() ) : $query->the_post();
-
- if (has_post_thumbnail()) {
-                    the_post_thumbnail( 'medium' );
-                }
 ?>
+<div class="outer-space col-xs-12 col-sm-4">
+    <div class="the-title"><a href="<?php echo get_post_meta($post->ID, 'link', true); ?>"><?php  the_title()?></a></div>
+<?php
+        if (has_post_thumbnail()) {
+            the_post_thumbnail( 'medium' );
+        }
+?>
+</div>
 <?php endwhile;
       wp_reset_postdata();
+?>
+</div>
+<?php
 
 
 
@@ -46,18 +54,23 @@ get_header(); ?>
 
     ?>
     <h3>Ελλάδα</h3>
+    <div class="row">
     <?php
     $query = new WP_Query( $args);
     while ( $query->have_posts() ) : $query->the_post();
-
- if (has_post_thumbnail()) {
-                    the_post_thumbnail( 'medium' );
-                }
 ?>
+<div class="outer-space col-xs-12 col-sm-4">
+    <div class="the-title"><a href="<?php echo get_post_meta($post->ID, 'link', true); ?>"><?php  the_title()?></a></div>
+<?php
+        if (has_post_thumbnail()) {
+            the_post_thumbnail( 'medium' );
+        }
+?>
+</div>
 <?php endwhile;
       wp_reset_postdata();
 ?>
-
+</div>
 
 </div>
 
