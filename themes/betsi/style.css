@@ -381,6 +381,7 @@ a.menu-toggle.full {
     width: auto;
     padding: 10px;
     visibility: hidden;
+    opacity: 0;
     z-index: 9999;
 }
 
@@ -426,7 +427,15 @@ a.menu-toggle.full {
     transform: rotate(-90deg) translate(-50%, 50%);
 }
 
-.slideInLeft { visibility: visible !important; }
+#patient-form-wrapper input {
+    display: none;
+}
+
+#patient-form-wrapper.slideInLeft { visibility: visible !important;opacity: 1;}
+
+#patient-form-wrapper.slideInLeft input {
+    display: block;
+}
 
 .side-title-form:hover {
     color: #fff;
